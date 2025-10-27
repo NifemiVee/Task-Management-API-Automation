@@ -1,0 +1,977 @@
+{
+	"id": "b9bb0586-4a65-4fb3-b960-8eb855de595d",
+	"name": "Task Management API",
+	"timestamp": "2025-10-24T12:39:34.882Z",
+	"collection_id": "21294548-ec22065a-f5e8-4a6c-a30d-22003ed1ffc9",
+	"folder_id": 0,
+	"environment_id": "21294548-6512a874-fc9a-4605-af46-e522f82e3e6f",
+	"totalPass": 36,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-10-24T12:39:01.989Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2124abd1-9d4c-476a-b2e6-4b414bd2d63f",
+			"name": "register user successully",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 3365,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3365
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "d9167208-4059-48d0-a5db-07b9212fe5d9",
+			"name": "register already registered user",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 468,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Existing username": true,
+				"Existing email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existing username": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existing email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				468
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Existing username": true,
+					"Existing email": true
+				}
+			]
+		},
+		{
+			"id": "870c2591-b3d2-4443-ad72-d5e7bf82695b",
+			"name": "Register with empty username",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 380,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty username": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty username": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				380
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty username": true
+				}
+			]
+		},
+		{
+			"id": "fea529e2-ac07-4908-b01c-6a4e5fd02f6b",
+			"name": "Register with empty empty password",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 384,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				384
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "1acb3145-d008-414c-8ba9-1df550c1ce3c",
+			"name": "Register with short password",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 597,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				597
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "5c3b39ff-254a-43ba-ba5b-59ab51591ba5",
+			"name": "Register with invalid password (ALL numbers)",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 685,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				685
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "2cf8fcd7-32f7-41ee-8705-537c7925129f",
+			"name": "Register with invalid password (ALL letters)",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 1340,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1340
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "a38cf33c-4884-4a58-b5df-692fe24c23cf",
+			"name": "Register with invalid password (Numbers and lowercase)",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 465,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				465
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "a6ea7057-6f87-471d-bf95-251a9b8bcd63",
+			"name": "Register with invalid password (Numbers, uppercase, and lowercase) Copy",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 1134,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1134
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "ee4566e7-3cc4-4c4a-9e5d-e6c4817598f4",
+			"name": "Register with empty email",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 1160,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1160
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "d542856e-8832-4549-af11-bb5eb02d9189",
+			"name": "Register with invalid email",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 731,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				731
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "27cee607-7916-409f-9225-d5682a524049",
+			"name": "Register with empty firstname",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 859,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				859
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "146f9241-2acd-4e4c-8cf1-6d0ee221004b",
+			"name": "Register with invalid firstname",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 452,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				452
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "64687735-dc79-4aee-9325-b2554b4fa60f",
+			"name": "Register with empty lastname",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 507,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				507
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "4b6ec3d8-69c5-4c59-8bfb-3e00aeede79d",
+			"name": "Register with invalid lastname",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
+			"time": 532,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Empty password": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Empty password": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				532
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Empty password": true
+				}
+			]
+		},
+		{
+			"id": "b7fbc7e3-70e1-4313-a987-5ef206067a7a",
+			"name": "Login with empty username and password",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/login/",
+			"time": 655,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				655
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "066ad6e2-b61e-462e-8632-a74c22172e21",
+			"name": "Login with empty username and valid password Copy",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/login/",
+			"time": 1069,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1069
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ce777e49-eb71-4697-9152-5d2c47e8a969",
+			"name": "Login with valid username and empty password Copy",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/login/",
+			"time": 1242,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1242
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "18efffab-5db2-4b6b-ae0e-f935119db48c",
+			"name": "Login with invalid password",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/login/",
+			"time": 1735,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1735
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "11de37fd-bb7a-4aae-9d74-af9c138de7be",
+			"name": "Login with invalid Username",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/login/",
+			"time": 1239,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1239
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "34380f2c-ffc5-41b3-baf6-38b52602f4ed",
+			"name": "Login as a user",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/login/",
+			"time": 864,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				864
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "c4dab072-e8c0-43d4-8448-2a36d0f77d90",
+			"name": "Refresh access token",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/token/refresh/",
+			"time": 729,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				729
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c1fdb1a6-c0fc-45ad-8985-01ebe0d7d1ed",
+			"name": "get tasks list",
+			"url": "https://583712ff5eff.ngrok-free.app/api/tasks/",
+			"time": 1995,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1995
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2b409445-48ad-4558-825a-6e6ff447dfc2",
+			"name": "get task by id successfully",
+			"url": "https://583712ff5eff.ngrok-free.app/api/tasks/34",
+			"time": 2316,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2316
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9086afd2-91f1-4d00-a9fb-8631709d174c",
+			"name": "get task by unregistered id",
+			"url": "https://583712ff5eff.ngrok-free.app/api/tasks/3",
+			"time": 600,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Unregistered": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Unregistered": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				600
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Unregistered": true
+				}
+			]
+		},
+		{
+			"id": "6ad5082e-802a-45cb-bb50-ee6c7a0fdea0",
+			"name": "create task",
+			"url": "https://583712ff5eff.ngrok-free.app/api/tasks/",
+			"time": 541,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				541
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ddfbe0d4-d3c7-402b-a387-a8186bc7dea5",
+			"name": "tasks update",
+			"url": "https://583712ff5eff.ngrok-free.app/api/tasks/17",
+			"time": 727,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				727
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dd82817c-2ab7-43ec-b9ad-016f9638793d",
+			"name": "tasks partial update",
+			"url": "https://583712ff5eff.ngrok-free.app/api/tasks/1",
+			"time": 916,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				916
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3ab52f68-5f70-44ef-8de1-89f064f6f629",
+			"name": "delete task by id",
+			"url": "https://583712ff5eff.ngrok-free.app/api/tasks/3",
+			"time": 806,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				806
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bba10891-5234-4c2a-b298-481778441027",
+			"name": "get api health status",
+			"url": "https://583712ff5eff.ngrok-free.app/api/health",
+			"time": 615,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				615
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "705b4429-94f7-4c74-a0b9-aafcd219a988",
+			"name": "Logout a user",
+			"url": "https://583712ff5eff.ngrok-free.app/api/auth/logout/",
+			"time": 502,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				502
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 29610,
+	"collection": {
+		"requests": [
+			{
+				"id": "2124abd1-9d4c-476a-b2e6-4b414bd2d63f",
+				"method": "POST"
+			},
+			{
+				"id": "d9167208-4059-48d0-a5db-07b9212fe5d9",
+				"method": "POST"
+			},
+			{
+				"id": "870c2591-b3d2-4443-ad72-d5e7bf82695b",
+				"method": "POST"
+			},
+			{
+				"id": "fea529e2-ac07-4908-b01c-6a4e5fd02f6b",
+				"method": "POST"
+			},
+			{
+				"id": "1acb3145-d008-414c-8ba9-1df550c1ce3c",
+				"method": "POST"
+			},
+			{
+				"id": "5c3b39ff-254a-43ba-ba5b-59ab51591ba5",
+				"method": "POST"
+			},
+			{
+				"id": "2cf8fcd7-32f7-41ee-8705-537c7925129f",
+				"method": "POST"
+			},
+			{
+				"id": "a38cf33c-4884-4a58-b5df-692fe24c23cf",
+				"method": "POST"
+			},
+			{
+				"id": "a6ea7057-6f87-471d-bf95-251a9b8bcd63",
+				"method": "POST"
+			},
+			{
+				"id": "ee4566e7-3cc4-4c4a-9e5d-e6c4817598f4",
+				"method": "POST"
+			},
+			{
+				"id": "d542856e-8832-4549-af11-bb5eb02d9189",
+				"method": "POST"
+			},
+			{
+				"id": "27cee607-7916-409f-9225-d5682a524049",
+				"method": "POST"
+			},
+			{
+				"id": "146f9241-2acd-4e4c-8cf1-6d0ee221004b",
+				"method": "POST"
+			},
+			{
+				"id": "64687735-dc79-4aee-9325-b2554b4fa60f",
+				"method": "POST"
+			},
+			{
+				"id": "4b6ec3d8-69c5-4c59-8bfb-3e00aeede79d",
+				"method": "POST"
+			},
+			{
+				"id": "b7fbc7e3-70e1-4313-a987-5ef206067a7a",
+				"method": "POST"
+			},
+			{
+				"id": "066ad6e2-b61e-462e-8632-a74c22172e21",
+				"method": "POST"
+			},
+			{
+				"id": "ce777e49-eb71-4697-9152-5d2c47e8a969",
+				"method": "POST"
+			},
+			{
+				"id": "18efffab-5db2-4b6b-ae0e-f935119db48c",
+				"method": "POST"
+			},
+			{
+				"id": "11de37fd-bb7a-4aae-9d74-af9c138de7be",
+				"method": "POST"
+			},
+			{
+				"id": "34380f2c-ffc5-41b3-baf6-38b52602f4ed",
+				"method": "POST"
+			},
+			{
+				"id": "c4dab072-e8c0-43d4-8448-2a36d0f77d90",
+				"method": "POST"
+			},
+			{
+				"id": "c1fdb1a6-c0fc-45ad-8985-01ebe0d7d1ed",
+				"method": "GET"
+			},
+			{
+				"id": "2b409445-48ad-4558-825a-6e6ff447dfc2",
+				"method": "GET"
+			},
+			{
+				"id": "9086afd2-91f1-4d00-a9fb-8631709d174c",
+				"method": "GET"
+			},
+			{
+				"id": "6ad5082e-802a-45cb-bb50-ee6c7a0fdea0",
+				"method": "POST"
+			},
+			{
+				"id": "ddfbe0d4-d3c7-402b-a387-a8186bc7dea5",
+				"method": "PUT"
+			},
+			{
+				"id": "dd82817c-2ab7-43ec-b9ad-016f9638793d",
+				"method": "PATCH"
+			},
+			{
+				"id": "3ab52f68-5f70-44ef-8de1-89f064f6f629",
+				"method": "DELETE"
+			},
+			{
+				"id": "bba10891-5234-4c2a-b298-481778441027",
+				"method": "GET"
+			},
+			{
+				"id": "705b4429-94f7-4c74-a0b9-aafcd219a988",
+				"method": "POST"
+			}
+		]
+	}
+}

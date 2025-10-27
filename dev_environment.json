@@ -1,0 +1,39 @@
+{
+	"id": "6512a874-fc9a-4605-af46-e522f82e3e6f",
+	"name": "DEV",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "https://583712ff5eff.ngrok-free.app/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "username",
+			"value": "https://583712ff5eff.ngrok-free.app/api",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "https://583712ff5eff.ngrok-free.app/api",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "refresh_token",
+			"value": "https://583712ff5eff.ngrok-free.app/api",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "https://583712ff5eff.ngrok-free.app/api",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-10-24T11:12:51.948Z",
+	"_postman_exported_using": "Postman/11.68.5"
+}
