@@ -77,15 +77,11 @@
 									}
 								},
 								"url": {
-									"raw": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
-									"protocol": "https",
+									"raw": "{{baseUrl}}/auth/register/",
 									"host": [
-										"583712ff5eff",
-										"ngrok-free",
-										"app"
+										"{{baseUrl}}"
 									],
 									"path": [
-										"api",
 										"auth",
 										"register",
 										""
@@ -252,15 +248,11 @@
 									}
 								},
 								"url": {
-									"raw": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
-									"protocol": "https",
+									"raw": "{{baseUrl}}/auth/register/",
 									"host": [
-										"583712ff5eff",
-										"ngrok-free",
-										"app"
+										"{{baseUrl}}"
 									],
 									"path": [
-										"api",
 										"auth",
 										"register",
 										""
@@ -404,15 +396,11 @@
 									"raw": "{\n  \"username\": \"\",\n  \"password\": \"Pass@123\",\n  \"email\": \"{{$randomEmail}}\",\n  \"first_name\": \"{{$randomUserName}}\",\n  \"last_name\": \"{{$randomLastName}}\"\n}"
 								},
 								"url": {
-									"raw": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
-									"protocol": "https",
+									"raw": "{{baseUrl}}/auth/register/",
 									"host": [
-										"583712ff5eff",
-										"ngrok-free",
-										"app"
+										"{{baseUrl}}"
 									],
 									"path": [
-										"api",
 										"auth",
 										"register",
 										""
@@ -471,15 +459,11 @@
 									"raw": "{\n  \"username\": \"{{$randomUserName}}\",\n  \"password\": \"\",\n  \"email\": \"{{$randomEmail}}\",\n  \"first_name\": \"{{$randomUserName}}\",\n  \"last_name\": \"{{$randomLastName}}\"\n}"
 								},
 								"url": {
-									"raw": "https://583712ff5eff.ngrok-free.app/api/auth/register/",
-									"protocol": "https",
+									"raw": "{{baseUrl}}/auth/register/",
 									"host": [
-										"583712ff5eff",
-										"ngrok-free",
-										"app"
+										"{{baseUrl}}"
 									],
 									"path": [
-										"api",
 										"auth",
 										"register",
 										""
@@ -1208,8 +1192,12 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -1227,7 +1215,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"Pass@123\"\n}",
+									"raw": "{\n    \"username\": \"Nifemi23\",\n    \"password\": \"Pass@123\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
